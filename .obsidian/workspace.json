@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "f44609ef0e0f68ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "e11178619805125c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec335855d070fdf5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3_學習筆記/MCU程式開發/C語言學習筆記.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "31adeb13b9ee4bba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2_專案筆記/E資料整理/MOC.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "adf19f3041731559",
+    "type": "split",
+    "children": [
+      {
+        "id": "bfd037f289a4e707",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "117f11566212eeb8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "352166f4ebe66ac8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8117270f02ab4790",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 296.5
+  },
+  "right": {
+    "id": "23e406a44f18f4a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "df28a2491970679e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4fa7bd6eabd1f665",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3_學習筆記/MCU程式開發/C語言學習筆記.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d6abeb39b839e0a8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "3_學習筆記/MCU程式開發/C語言學習筆記.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ee19e6bd7aee9d93",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4386ec6481862178",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "3_學習筆記/MCU程式開發/C語言學習筆記.md"
+              }
+            }
+          },
+          {
+            "id": "ccd98d04f41c19fd",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 347.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "tag-page-md:Refresh tag page": false,
+      "obsidian-day-planner:Timeline": false
+    }
+  },
+  "active": "117f11566212eeb8",
+  "lastOpenFiles": [
+    "3_學習筆記/MCU程式開發/dsPIC33EP64MC503 T2 MCC 設定紀錄.md",
+    "3_學習筆記/MCU程式開發/dsPIC33EP64MC503 MCC設定.md",
+    "3_學習筆記/MCU程式開發/dsPIC33 Clock System.md",
+    "3_學習筆記/MCU程式開發/dsPIC33EP64MC503 T2 Version MCC 設定紀錄.md",
+    "3_學習筆記/MCU程式開發/Doxygen 程式註解工具用於C語言.md",
+    "3_學習筆記/MCU程式開發/Doxygen 程式註解工具的C語言簡易範例.md",
+    "3_學習筆記/MCU程式開發/API 檔案架構與設計分析.md",
+    "2_專案筆記/績效考核/電控研發文件管理規劃.md",
+    "2_專案筆記/績效考核/程式開發帳號管理.md",
+    "2_專案筆記/績效考核/軟韌體開發管理規範.md",
+    "2_專案筆記/績效考核/組織運作原則.md",
+    "2_專案筆記/績效考核/組員 KPI Review 要點.md",
+    "2_專案筆記/績效考核/新人報到準備清單.md",
+    "1_閃念筆記/產品經理必備能力樹狀圖.md",
+    "1_閃念筆記/做自己人生的CEO.md",
+    "2-1_工作專案/ABS/T2架構設計.md",
+    "2-1_工作專案/ABS/T2 控制策略.md",
+    "2-1_工作專案/ABS/T2 編號與現狀紀錄_20210128.md",
+    "2-1_工作專案/MCU/SPI to MCP25625.md",
+    "2-1_工作專案/ABS/SBS 專案狀態筆記.md",
+    "3_學習筆記/MCU程式開發/nRF52 DK 使用 Segger Embedded Studio(ses) 進行開發 (Get Start).md",
+    "3_學習筆記/MCU程式開發/nRF52 Hardware Drivers 研究.md",
+    "3_學習筆記/MCU程式開發/Nordic nRF52832 APP Timer & Button.md",
+    "3_學習筆記/MCU程式開發/Nordic G-EBike 檔案夾架構研究.md",
+    "3_學習筆記/MCU程式開發/MPLABX gitignore研究.md",
+    "3_學習筆記/Motec 使用說明.md",
+    "2_專案筆記/績效考核",
+    "2_專案筆記/新增資料夾",
+    "3_學習筆記/Git",
+    "3_學習筆記/新增資料夾",
+    "2_專案筆記/E資料整理",
+    "Untitled.canvas",
+    "attachments/38kph下坡輪速跳動.jpg",
+    "daily",
+    "daily'",
+    "新增資料夾",
+    "3_學習筆記/FinTech",
+    "3_學習筆記/MCU程式開發",
+    "38kph下坡輪速跳動.jpg"
+  ]
+}

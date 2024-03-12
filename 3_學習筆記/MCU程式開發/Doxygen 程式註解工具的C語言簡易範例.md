@@ -1,0 +1,298 @@
+
+Doxygen 程式註解工具的C語言簡易範例
+===
+###### tags:`C語言`,`doxygen`
+
+
+:::success
+* 2021.6.10 草稿
+* 原預計以Microsoft HTML Help 產生.chm 說明檔，但是安裝1.3無法產生檔案,改產生RTF 
+:::
+---
+
+[TOC]
+
+---
+
+# 參考資料
+[設定參考1](https://www.itread01.com/conten[t/1549180824.html)
+[設定參考2](https://www.itread01.com/content/15466]69275.html)
+[註解編輯](https://b8807053.pixnet.net/blog/post/3612235)
+
+[Doxygen Special Commands](https://www.doxygen.nl/manual/commands.html)
+
+[Complete Guide On Using Doxygen To Document C Source Code..!!](https://embeddedinventor.com/guide-to-configure-doxygen-to-document-c-source-code-for-beginners/)
+
+---
+# Doxygen 用途
+<font size=5, color=black>藉由在程式內編寫固定格式的註解，自動產生一份中文的說明文件，方便解讀、回憶、交接。</font><br>
+
+# 工具安裝
+
+* [Doxygen：包含Doxywizard, 版本1.9.1](https://www.doxygen.nl/download.html) 
+![](https://i.imgur.com/Ipme9OP.png)
+
+* [Graphviz: 產生程式呼叫圖形化](https://graphviz.org/download/)
+    * Graphviz is open source graph visualization software. 
+    * Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks. It has important applications in networking, bioinformatics, software engineering, database and web design, machine learning, and in visual interfaces for other technical domains.
+
+![](https://i.imgur.com/7azSgoc.png)
+
+---
+# Wizard 設定
+安裝完成，執行檔：
+![](https://i.imgur.com/YID1QXr.png)
+
+設定：
+## Wizard
+### Project 
+檔案夾位置: 包含程式、說明檔產生位置等, 按下Next 
+![](https://i.imgur.com/tSlkS22.png)
+
+
+### Mode 
+選擇All Entities，可以輸出相對完整的功能，選擇好你的語言(這裡選C)
+![](https://i.imgur.com/FzpRL2P.png)
+
+### Output
+* 勾選html
+* 勾選RTF可以用來轉PDF 
+![](https://i.imgur.com/TPUwm9J.png)
+
+
+### Diagrams
+選擇使用GraphViz包，來輸出UML。
+![](https://i.imgur.com/xMIDmug.png)
+
+## Expert
+### Project
+支援繁體中文，設定 BIG5，選Chinese-Traditional
+![](https://i.imgur.com/I9EjYFl.png)
+![](https://i.imgur.com/2IcAuch.png)
+![](https://i.imgur.com/ebCqBWs.png)
+
+### Build
+![](https://i.imgur.com/iLX8wsP.png)
+
+### Input
+![](https://i.imgur.com/oo0o7vK.png)
+
+### Source browser 
+![](https://i.imgur.com/FOz125i.png)
+
+### Index
+![](https://i.imgur.com/CPdKXcq.png)
+
+### HTML
+![](https://i.imgur.com/5Qz6vsh.png)
+![](https://i.imgur.com/yCV0W2r.png)
+![](https://i.imgur.com/ujhjWhh.png)
+
+### LaTex
+不使用
+![](https://i.imgur.com/Vwu5NzS.png)
+
+### RTF 
+![](https://i.imgur.com/CigaMSj.png)
+
+### Man 
+![](https://i.imgur.com/PzJVXbB.png)
+
+### XML
+![](https://i.imgur.com/cHlNfkm.png)
+
+### Dotbook
+![](https://i.imgur.com/7PmFaea.png)
+
+### AutoGen 
+![](https://i.imgur.com/o3q4pAT.png)
+
+### PerlMod
+![](https://i.imgur.com/FrS1MTw.png)
+
+### Preprocessor 
+![](https://i.imgur.com/RZ6pNpa.png)
+
+### External
+![](https://i.imgur.com/7Z02vtl.png)
+
+### Dot
+![](https://i.imgur.com/nr261rL.png)
+![](https://i.imgur.com/kHQp3d9.png)
+
+### Run doxygen: 產生 RTF & html 說明文件
+![](https://i.imgur.com/bpXjboK.png)
+
+---
+# 範例資料夾架構圖
+```
++-- Doxygen _TestFolder
+|   +-- Doxygen _Test
+|       +-- app1.c
+|       +-- app1.h
+|       +-- main.c
+|       +-- project_info.dox    // 專案訊息文字檔
+|   +-- Doc
+|       +-- Doxygen_Test        // RTF 說明文件       
+|       +-- html                // html 說明文件
++-- DoxySetup_C_20210604        // doxygen 設定檔
+```
+
+[<font size=5, color=blue>範例檔</font><br>](https://drive.google.com/file/d/1lSPdS6wrCo6wgxERQwi3t2FBMgfiFzza/view?usp=sharing)
+
+---
+# 專案訊息 project_info.dox
+以文字編輯器產生一個project_info.dox, 內容可描述專案內容，並可以放置網頁連結,如下：
+
+```c=
+/**
+
+@mainpage DoxygenTest 專案說明
+
+@verbatim
+本專案用於說明 " C語言"程式產生Doxygen說明檔的方法
+@endverbatim
+
+@verbatim
+<導入 Microchip 專案> 
+@endverbatim
+@sa https://hackmd.io/z236F4CnRhSH-OEGiuOQVw?both 
+
+@verbatim
+<導入 Nordic 專案> 
+@endverbatim
+@sa https://hackmd.io/z236F4CnRhSH-OEGiuOQVw?both 
+
+*/
+
+```
+Doxygen畫面：
+
+![](https://i.imgur.com/YigFBBb.png)
+
+
+# main.c：只有主程式
+
+```c=
+/**
+* @file main.c
+* @brief Main entry point of the program. 
+* @author John, Kevin
+* @bug No known bug 
+*/
+
+#include "app1.h"
+
+/**
+ * @brief main process
+*/
+int main()
+{
+    float radius, area, perimeter;
+    radius = RADIUS_M;
+    area = calculate_area(radius);
+    perimeter = calculate_perimeter(radius);
+    printf("Area = %.2f sq.m \n", area);
+    printf("perimeter = %.2f m\n", perimeter);
+    return 0;
+}
+
+```
+
+# app1.c: .c 檔只有寫檔案訊息，註解部分放在.h
+
+```
+/**
+* @file app1.c
+* @brief    I2C & OP hardware drivers
+* @author	Morris Wang
+* @date		2021.6.3
+* @bug      No known bug
+*/
+
+float calculate_area(float radius)
+{
+    float area;
+    area = PI * radius * radius;
+    return area;
+}
+
+float calculate_perimeter(float radius)
+{
+    float perimeter;
+    perimeter = 2 * PI * radius;
+    return perimeter;
+}
+
+```
+
+# app1.h: 註解部分放在.h
+
+
+```c=
+/**
+* @file app1.h
+* @brief    Function  prototype of I2C & Oil Pressure hardware drivers
+*           included defines, macros, structures, constants
+*           and global variables.        
+* @author	Morris Wang
+* @date		2021.6.3
+* @bug      No known bug
+*/
+
+#define PI       3.1415   ///< constant PI.
+#define RADIUS_M 7.82     ///< Radius in meters
+
+int global_int = 0;  ///< description of global_int 
+const int fileSize = 1048576;  ///< Default size of the file on disk 
+
+/** @struct rectangle_t
+ *  @brief 正方形參數，長和寬 
+ */
+typedef struct
+{
+    int length;     ///< length of longer side
+    int breadth;    ///< length of shorter side 
+}rectangle_t;
+
+rectangle_t rec = { .length = 15, .breadth = 7 };
+
+/** @enum direction_t
+ *  @brief 物件指向：東西南北
+ */
+typedef enum
+{
+    North = 4,  ///< defined object faced to north
+    South = 3,  ///< defined object faced to south
+    East = 2,   ///< defined object faced to east
+    West= 1  ///< defined object faced to west
+}direction_t;
+
+direction_t squart = North;
+
+/**
+ * @brief Calculates the Area of the circle.
+   Formula: Area = PI*r^2
+ * @param[in] (float)radius
+ * @param[out] (float)area
+ */
+float calculate_area(float radius);
+
+/**
+ * @brief Calculates the Perimeter of the circle.
+ * Formula: Perimeter = 2*PI*r
+ * @param[in] (float)radius
+ * @param[out] (float)perimeter
+*/
+float calculate_perimeter(float radius);
+```
+# 延伸閱讀
+
+---
+> 未來的你一定會感謝現在努力的自己. [name=]
+
+:::info
+**Find this document incomplete?** Leave a comment!
+:::
+
+
